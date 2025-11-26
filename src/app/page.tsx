@@ -7,11 +7,13 @@ import Footer from "@/components/layout/Footer";
 export default function Home() {
   return (
     <main className="bg-brand-dark text-white">
-      <Hero />
-      <LeadersSection />
-      <div className="relative z-10 -mt-10 pb-100 md:-mt-220">
-        <Stats />
+      <div className="relative">
+        <Hero />
+        <div className="absolute bottom-0 left-0 right-0 z-20 translate-y-1/2">
+          <Stats />
+        </div>
       </div>
+      <LeadersSection />
       <Offerings />
       <Footer />
     </main>

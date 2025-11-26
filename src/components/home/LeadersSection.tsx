@@ -20,7 +20,7 @@ export default function LeadersSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black/90" />
       </div>
 
-      <div className="relative container space-y-10 py-34">
+      <div className="relative container space-y-10 pb-24 pt-48">
         <div className="space-y-5 text-center">
           <Badge className="mx-auto border-white/40 bg-transparent">
             {badge}

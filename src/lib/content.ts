@@ -21,20 +21,17 @@ export const heroContent: HeroContent = {
     {
       id: "purpose",
       label: "Purpose",
-      image:
-        "https://images.unsplash.com/photo-1501432377862-3d0432b87a14?auto=format&fit=crop&w=900&q=80",
+      image: "/Rectangle 1.png",
     },
     {
       id: "products",
       label: "Products",
-      image:
-        "https://images.unsplash.com/photo-1506802913710-40e2e66339c5?auto=format&fit=crop&w=900&q=80",
+      image: "/Rectangle 2.png",
     },
     {
       id: "investment",
       label: "Investment",
-      image:
-        "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80",
+      image: "/Rectangle 3.png",
     },
   ],
 };

@@ -24,7 +24,7 @@ const config: Config = {
           charcoal: "#181310",
           cocoa: "#2B1305",
           gold: "#C9A064",
-          cream: "#F4E3CE",
+          cream: "#FDF6E3",
           sand: "#D0B08A",
         },
       },
