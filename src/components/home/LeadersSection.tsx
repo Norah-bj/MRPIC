@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { leadersContent } from "@/lib/content";
 import { Badge } from "@/components/ui/Badge";
@@ -10,13 +9,7 @@ export default function LeadersSection() {
   return (
     <section className="relative isolate overflow-hidden bg-brand-dark text-white">
       <div className="absolute inset-0">
-        <Image
-          src={background}
-          alt="Leadership meeting"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
+        <img src="/LeaderSection-bg.png" alt="" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black/90" />
       </div>
 

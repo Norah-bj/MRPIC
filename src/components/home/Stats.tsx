@@ -3,7 +3,7 @@ import { statsMetrics } from "@/lib/content";
 export default function Stats() {
   return (
     <section className="relative z-20 mx-auto max-w-7xl px-6 md:px-26">
-      <div className="rounded-xl border border-white/30 bg-black/20 px-2 py-2 text-white backdrop-blur-sm md:px-8 md:py-12">
+      <div className="rounded-xl border border-white/30 bg-black/20 px-6 py-6 text-white backdrop-blur-sm md:px-8 md:py-12">
         <div className="grid text-center sm:grid-cols-2 lg:grid-cols-4">
           {statsMetrics.map((metric) => (
             <div key={metric.label} className="flex flex-col items-center">
