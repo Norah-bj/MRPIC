@@ -4,17 +4,36 @@ const config: Config = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}"
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1.5rem",
+        lg: "2.5rem",
+      },
+      screens: {
+        "2xl": "1240px",
+      },
+    },
     extend: {
       colors: {
-        primary: "#2F6D2F",   // your green (you can change it)
-        secondary: "#C9A13C", // golden highlight if needed
-        dark: "#1a1a1a",
+        brand: {
+          dark: "#0B0907",
+          charcoal: "#181310",
+          cocoa: "#2B1305",
+          gold: "#C9A064",
+          cream: "#F4E3CE",
+          sand: "#D0B08A",
+        },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        display: ["Playfair Display", "serif"],
+        sans: ["Inter", "var(--font-geist-sans)", "sans-serif"],
+      },
+      boxShadow: {
+        glow: "0 20px 45px rgba(0,0,0,0.45)",
       },
     },
   },
