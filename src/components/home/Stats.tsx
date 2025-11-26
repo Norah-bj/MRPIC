@@ -2,15 +2,15 @@ import { statsMetrics } from "@/lib/content";
 
 export default function Stats() {
   return (
-    <section className="relative z-20 mx-auto max-w-7xl px-6 md:px-8">
-      <div className="rounded-xl border border-white/30 bg-black/20 px-8 py-12 text-white backdrop-blur-sm md:px-12 md:py-16">
-        <div className="grid gap-12 text-center sm:grid-cols-2 lg:grid-cols-4">
+    <section className="relative z-20 mx-auto max-w-7xl px-6 md:px-26">
+      <div className="rounded-xl border border-white/30 bg-black/20 px-2 py-2 text-white backdrop-blur-sm md:px-8 md:py-12">
+        <div className="grid text-center sm:grid-cols-2 lg:grid-cols-4">
           {statsMetrics.map((metric) => (
             <div key={metric.label} className="flex flex-col items-center">
-              <p className="font-display text-4xl font-bold tracking-tight md:text-5xl">
+              <p className="font-display text-2xl font-bold tracking-tight md:text-3xl">
                 {metric.value}
               </p>
-              <p className="mt-3 text-xs font-bold uppercase tracking-[0.15em] text-white/80">
+              <p className="mt-1 text-[12px] font-bold tracking-[0.15em] text-white/80">
                 {metric.label}
               </p>
             </div>
@@ -18,11 +18,11 @@ export default function Stats() {
         </div>
 
         {/* Timeline Visual */}
-        <div className="mt-16 flex items-center gap-4 md:mt-20">
+        <div className="mt-4 flex items-center gap-2 md:mt-5">
           <button
             type="button"
             aria-label="Previous"
-            className="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-white/30 text-lg text-white transition-colors hover:border-white hover:bg-white hover:text-brand-dark"
+            className="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-white/30 text-lg text-white transition-colors"
           >
             ←
           </button>
@@ -32,9 +32,7 @@ export default function Stats() {
               {statsMetrics.map((metric, i) => (
                 <div
                   key={`${metric.label}-node`}
-                  className={`relative z-10 h-3 w-3 rounded-full border border-white bg-transparent ring-4 ring-transparent ${
-                    i === 1 ? "scale-125 border-4 bg-white" : ""
-                  }`}
+                  className="relative z-10 h-3 w-3 rounded-full border border-white bg-transparent ring-4 ring-transparent"
                 />
               ))}
             </div>
@@ -42,7 +40,7 @@ export default function Stats() {
           <button
             type="button"
             aria-label="Next"
-            className="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-white/30 text-lg text-white transition-colors hover:border-white hover:bg-white hover:text-brand-dark"
+            className="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-white/30 text-lg text-white transition-colors"
           >
             →
           </button>
