@@ -21,7 +21,7 @@ export const heroContent: HeroContent = {
     {
       id: "purpose",
       label: "Purpose",
-      image: "/Rectangle 1.png",
+      image: "/hello.jpg",
     },
     {
       id: "products",
