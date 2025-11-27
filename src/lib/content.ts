@@ -66,7 +66,7 @@ export const leadersContent: LeadersContent = {
   ctaLabel: "Meet the visionaries",
   ctaHref: "/about#leadership",
   background:
-    "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80",
+    "/LeaderSection-bg.png",
   cards: [
     {
       title: "Vision",

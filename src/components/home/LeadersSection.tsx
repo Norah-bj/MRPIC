@@ -17,7 +17,7 @@ export default function LeadersSection() {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="container relative z-10 flex flex-col items-center justify-center py-20 md:py-32">
+      <div className="container mx-auto relative z-10 flex flex-col items-center justify-center py-20 md:py-32">
         {/* Header Content */}
         <div className="mb-16 max-w-4xl text-center">
           <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-white">
@@ -42,9 +42,9 @@ export default function LeadersSection() {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="flex flex-col items-center justify-center bg-transparent px-8 py-16 text-center backdrop-blur-sm md:px-12 md:py-20"
+              className="flex h-full flex-col items-center justify-center bg-transparent px-6 py-12 text-center backdrop-blur-sm md:px-8 md:py-12"
             >
-              <h3 className="mb-6 font-display text-2xl font-bold capitalize md:text-3xl">
+              <h3 className="mb-6 font-display text-xl font-bold capitalize md:text-2xl">
                 {card.title}
               </h3>
               <p className="max-w-md text-base leading-relaxed text-white/90 md:text-lg">
