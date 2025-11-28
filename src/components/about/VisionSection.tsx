@@ -4,6 +4,9 @@ export default function VisionSection() {
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto max-w-6xl space-y-16 px-6">
+        <h2 className="mb-12 text-center text-3xl font-bold uppercase tracking-wide text-black">
+          ABOUT US
+        </h2>
         {/* Who we are */}
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <div className="relative h-[300px] overflow-hidden rounded-lg">
