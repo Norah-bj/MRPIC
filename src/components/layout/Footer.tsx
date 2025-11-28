@@ -6,28 +6,30 @@ export default function Footer() {
     footerContent;
 
   return (
-    <footer className="bg-brand-cocoa text-white">
-      <div className="container space-y-6 py-12 text-center text-sm">
-        <div className="flex flex-wrap items-center justify-center gap-4 text-xs uppercase tracking-[0.45em] text-brand-cream">
-          <span className="text-base font-semibold tracking-[0.6em]">
-            {brand}
-          </span>
+    <footer className="bg-[#2C1800] text-white">
+      <div className="container mx-auto max-w-6xl space-y-8 px-6 py-16 text-center">
+        {/* Brand and Social Media */}
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          <h3 className="text-xl font-bold tracking-wider">{brand}</h3>
           <span className="text-white/40">|</span>
-          {socialLinks.map((social) => (
-            <Link
-              key={social.label}
-              href={social.href}
-              aria-label={social.label}
-              className="flex h-7 w-7 items-center justify-center rounded-full border border-white/30 text-[0.65rem] font-semibold hover:border-white"
-            >
-              {social.icon}
-            </Link>
-          ))}
+          <div className="flex items-center gap-4">
+            {socialLinks.map((social) => (
+              <Link
+                key={social.label}
+                href={social.href}
+                aria-label={social.label}
+                className="flex h-8 w-8 items-center justify-center rounded-sm bg-white/10 text-xs font-semibold text-white transition-colors hover:bg-white/20"
+              >
+                {social.icon}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <nav className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold uppercase tracking-[0.45em] text-brand-cream/70">
+        {/* Navigation Links */}
+        <nav className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/90">
           {navLinks.map((link, index) => (
-            <div key={link.href} className="flex items-center gap-4">
+            <div key={link.href} className="flex items-center gap-6">
               <Link href={link.href} className="hover:text-white">
                 {link.label}
               </Link>
@@ -38,11 +40,16 @@ export default function Footer() {
           ))}
         </nav>
 
-        <p className="mx-auto max-w-3xl text-xs text-brand-cream/80">
+        {/* Description */}
+        <p className="mx-auto max-w-3xl text-sm leading-relaxed text-white/80">
           {description}
         </p>
-        <p className="text-xs text-brand-cream/80">{note}</p>
-        <p className="text-xs text-brand-cream/60">{poweredBy}</p>
+
+        {/* Note */}
+        <p className="text-sm text-white/70">{note}</p>
+
+        {/* Copyright */}
+        <p className="text-xs text-white/60">{poweredBy}</p>
       </div>
     </footer>
   );
