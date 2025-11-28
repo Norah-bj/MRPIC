@@ -14,7 +14,7 @@ export default function JoinOurTeam() {
       />
       
       {/* Circular Card Overlay */}
-      <div className="absolute right-[10%] top-1/2 flex h-[340px] w-[340px] -translate-y-1/2 items-center justify-center rounded-full bg-[#8B4513] p-[6px] shadow-2xl">
+      <div className="absolute right-[10%] top-1/2 flex h-[340px] w-[340px] -translate-y-1/2 items-center justify-center rounded-full bg-[#431800] p-[6px] shadow-2xl">
         <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
           <div className="space-y-4 px-8 py-6 text-center">
             <p className="text-xl font-bold uppercase tracking-wider text-[#431800]">

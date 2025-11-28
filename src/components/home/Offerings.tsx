@@ -55,10 +55,10 @@ export default function Offerings() {
                   />
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold uppercase tracking-widest text-[#431800]">
+                  <h3 className="text-xl font-bold uppercase tracking-widest text-black">
                     {product.title}
                   </h3>
-                  <p className="mx-auto max-w-xs text-sm leading-relaxed text-[#431800]">
+                  <p className="mx-auto max-w-xs text-sm leading-relaxed text-black">
                     {product.description}
                   </p>
                 </div>
