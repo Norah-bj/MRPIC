@@ -3,7 +3,6 @@ import Stats from "@/components/home/Stats";
 import Offerings from "@/components/home/Offerings";
 import LeadersSection from "@/components/home/LeadersSection";
 import JoinOurTeam from "@/components/home/JoinOurTeam";
-import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <LeadersSection />
       <Offerings />
       <JoinOurTeam />
-      <Footer />
     </main>
   );
 }
