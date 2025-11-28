@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { footerContent } from "@/lib/content";
+import { FacebookIcon, TwitterIcon, LinkedInIcon, InstagramIcon } from "@/components/icons/SocialIcons";
+
 
 export default function Footer() {
   const { brand, description, navLinks, socialLinks, note, poweredBy } =
@@ -13,16 +15,25 @@ export default function Footer() {
           <h3 className="text-xl font-bold tracking-wider">{brand}</h3>
           <span className="text-white/40">|</span>
           <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
-              <Link
-                key={social.label}
-                href={social.href}
-                aria-label={social.label}
-                className="flex h-8 w-8 items-center justify-center rounded-sm bg-white/10 text-xs font-semibold text-white transition-colors hover:bg-white/20"
-              >
-                {social.icon}
-              </Link>
-            ))}
+            {socialLinks.map((social) => {
+              const IconComponent = 
+                social.icon === "facebook" ? FacebookIcon :
+                social.icon === "twitter" ? TwitterIcon :
+                social.icon === "linkedin" ? LinkedInIcon :
+                social.icon === "instagram" ? InstagramIcon :
+                null;
+
+              return (
+                <Link
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="flex h-8 w-8 items-center justify-center rounded-sm bg-white/10 text-xs font-semibold text-white transition-colors hover:bg-white/20"
+                >
+                  {IconComponent && <IconComponent />}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
