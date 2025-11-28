@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function JoinOurTeam() {
   return (
-    <section className="relative h-[600px] w-full overflow-hidden bg-gray-900">
+    <section className="relative h-[400px] w-full overflow-hidden bg-gray-900">
       {/* Background Image */}
       <Image
         src="/Join-ourteam-bg.png"
@@ -14,12 +14,12 @@ export default function JoinOurTeam() {
       />
       
       {/* Circular Card Overlay */}
-      <div className="absolute right-[10%] top-1/2 flex h-[500px] w-[500px] -translate-y-1/2 items-center justify-center rounded-full border-4 border-[#8B4513] bg-white shadow-2xl">
-        <div className="space-y-6 p-12 text-center">
-          <p className="text-sm font-bold uppercase tracking-wider text-[#431800]">
+      <div className="absolute right-[10%] top-1/2 flex h-[350px] w-[350px] -translate-y-1/2 items-center justify-center rounded-full border-4 border-[#8B4513] bg-white shadow-2xl">
+        <div className="space-y-5 p-10 text-center">
+          <p className="text-1xl font-bold uppercase tracking-wider text-[#431800]">
             JOIN OUR TEAM
           </p>
-          <h2 className="text-3xl font-bold leading-tight text-black">
+          <h2 className="text-sm font-bold leading-tight text-black">
             Be APart Of Mukunguri Rice
           </h2>
           <p className="mx-auto max-w-sm text-base leading-relaxed text-gray-700">
