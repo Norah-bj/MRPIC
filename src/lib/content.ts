@@ -151,5 +151,5 @@ export const footerContent: FooterContent = {
     { label: "Instagram", href: "https://instagram.com", icon: "instagram" },
   ],
   note: "Follow us on social media for updates, offers, and more. We appreciate your support and look forward to serving you again.",
-  poweredBy: "© 2025 Mukunguri | Powered by Huza",
+  poweredBy: "© 2025 Mukunguri | Powered by Nora",
 };

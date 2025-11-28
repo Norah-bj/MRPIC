@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#2C1800] text-white">
-      <div className="container mx-auto max-w-6xl space-y-8 px-6 py-16 text-center">
+      <div className="container mx-auto max-w-6xl space-y-8 px-6 py-8 text-center">
         {/* Brand and Social Media */}
         <div className="flex flex-wrap items-center justify-center gap-6">
           <h3 className="text-xl font-bold tracking-wider">{brand}</h3>
