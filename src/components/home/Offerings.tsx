@@ -2,60 +2,66 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import { productsContent } from "@/lib/content";
-import { Badge } from "@/components/ui/Badge";
 
 export default function Offerings() {
   const { badge, title, ctaHref, ctaLabel, products } = productsContent;
 
+  // Display only 6 products (2 rows of 3)
+  const displayProducts = products.slice(0, 6);
+
   return (
-    <section className="bg-[#FFF9F2] py-24 text-brand-cocoa">
-      <div className="container space-y-12">
-        <div className="flex flex-wrap items-center justify-between gap-6 border-b border-brand-cocoa/15 pb-6">
-          <div className="space-y-3">
-            <Badge className="border-brand-cocoa/30 bg-transparent text-brand-cocoa">
+    <section className="bg-white py-24 text-[#431800]">
+      <div className="container mx-auto max-w-6xl px-6 space-y-16">
+        <div className="flex flex-wrap items-end justify-between gap-6 border-b border-[#431800] pb-8">
+          <div className="space-y-4">
+            <h3 className="text-sm font-bold text-[#431800]">
               {badge}
-            </Badge>
-            <h2 className="font-display text-3xl uppercase tracking-[0.25em] md:text-4xl">
+            </h3>
+            <h2 className="font-display text-4xl font-bold tracking-tight text-[#431800] md:text-5xl">
               {title}
             </h2>
           </div>
           <Link
             href={ctaHref}
-            className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.45em]"
+            className="group flex items-center gap-3 text-sm font-bold text-[#431800] transition-colors hover:opacity-80"
           >
             {ctaLabel}
-            <span className="flex h-8 w-8 items-center justify-center rounded-full border border-brand-cocoa text-lg">
-              +
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#431800] text-white transition-transform group-hover:translate-x-1">
+              →
             </span>
           </Link>
         </div>
 
-        <div className="overflow-hidden rounded-2xl border border-brand-cocoa/15">
-          <div className="grid grid-cols-1 divide-y divide-brand-cocoa/15 md:grid-cols-3 md:divide-y-0">
-            {products.map((product, index) => (
+        <div className="">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            {displayProducts.map((product, index) => (
               <article
-                key={product.title + product.description}
+                key={index}
                 className={clsx(
-                  "space-y-4 bg-white p-10 text-center",
-                  index < 3 && "md:border-b md:border-brand-cocoa/15",
-                  index % 3 !== 2 && "md:border-r md:border-brand-cocoa/15"
+                  "relative flex flex-col items-center space-y-6 p-8 text-center",
+                  // Horizontal divider (bottom) - inset for first row
+                  index < 3 && "after:absolute after:bottom-0 after:left-8 after:right-8 after:h-px after:bg-[#431800]",
+                  // Vertical divider (right) - inset
+                  index % 3 !== 2 && "md:before:absolute md:before:right-0 md:before:top-8 md:before:bottom-8 md:before:w-px md:before:bg-[#431800]"
                 )}
               >
-                <div className="relative mx-auto h-32 w-32 overflow-hidden rounded-full border border-brand-cocoa/20 bg-brand-cream">
+                <div className="relative h-48 w-48 overflow-hidden rounded-full">
                   <Image
                     src={product.image}
                     alt={product.alt}
                     fill
-                    sizes="128px"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-semibold uppercase tracking-[0.25em]">
-                  {product.title}
-                </h3>
-                <p className="text-sm text-brand-cocoa/80">
-                  {product.description}
-                </p>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold uppercase tracking-widest text-[#431800]">
+                    {product.title}
+                  </h3>
+                  <p className="mx-auto max-w-xs text-sm leading-relaxed text-[#431800]">
+                    {product.description}
+                  </p>
+                </div>
               </article>
             ))}
           </div>

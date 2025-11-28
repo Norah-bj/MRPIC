@@ -88,51 +88,45 @@ export const productsContent: ProductsContent = {
   ctaHref: "/products",
   products: [
     {
-      title: "Buryohe Rice",
+      title: "BURYOHE Rice",
       description:
-        "Flagship rice processed at our Mugina mill, prized for its fluffy texture and aroma.",
-      image:
-        "https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=600&q=80",
+        "Our flagship rice brand - processed at our Rice Mill from paddy rice grown in Mukunguri valley. Premium cleaned rice ready for market across Rwanda.",
+      image: "/Recipe 1.png",
       alt: "Bowl of white rice",
     },
     {
-      title: "Umumaf Maize Flour",
+      title: "UMUMAF Maize Flour",
       description:
-        "Premium maize flour milled for homes and schools, enriched with essential nutrients.",
-      image:
-        "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80",
+        "Our premium maize flour brand - processed at our Maize Flour Plant from local farmers. Enriched maize meal for households and schools across Rwanda.",
+      image: "/Recipe 2.png",
       alt: "Bowl of maize flour",
     },
     {
       title: "Brown Rice",
       description:
-        "Nutrient-rich brown rice grown through sustainable methods for conscious consumers.",
-      image:
-        "https://images.unsplash.com/photo-1562440499-64c9a111f713?auto=format&fit=crop&w=600&q=80",
+        "Nutrient-rich brown rice grown using sustainable methods. Healthier choice for conscious consumers.",
+      image: "/Recipe 3.png",
       alt: "Bowl of brown rice",
     },
     {
-      title: "Buryohe Rice",
+      title: "BURYOHE Rice",
       description:
-        "Premium whole grain rice ideal for culinary creatives and daily family meals.",
-      image:
-        "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=600&q=80",
+        "Our flagship rice brand - processed at our Rice Mill from paddy rice grown in Mukunguri valley. Premium cleaned rice ready for market across Rwanda.",
+      image: "/Recipe 4.png",
       alt: "Serving of rice",
     },
     {
-      title: "Umumaf Maize Flour",
+      title: "UMUMAF Maize Flour",
       description:
-        "Finely milled maize flour tailored for bakeries and large-scale kitchens.",
-      image:
-        "https://images.unsplash.com/photo-1503480716410-7f76390a2dcd?auto=format&fit=crop&w=600&q=80",
+        "Our premium maize flour brand - processed at our Maize Flour Plant from local farmers. Enriched maize meal for households and schools across Rwanda.",
+      image: "/Recipe 5.png",
       alt: "Maize flour scooped in bowl",
     },
     {
       title: "Brown Rice",
       description:
-        "Hearty brown rice offering fiber-rich nutrition and a nutty finish.",
-      image:
-        "https://images.unsplash.com/photo-1484981138541-3d074aa97716?auto=format&fit=crop&w=600&q=80",
+        "Nutrient-rich brown rice grown using sustainable methods. Healthier choice for conscious consumers.",
+      image: "/Recipe 6.png",
       alt: "Cooked brown rice",
     },
   ],
