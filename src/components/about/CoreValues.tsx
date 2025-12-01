@@ -37,7 +37,7 @@ export default function CoreValues() {
         </h2>
         
         {/* First Row */}
-        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mb-12 grid grid-cols-1 gap-28 md:grid-cols-3">
           {values.map((value, index) => (
             <div key={`row1-${index}`} className="flex flex-col items-center space-y-4 text-center">
               <div className="text-black">{value.icon}</div>
@@ -50,7 +50,7 @@ export default function CoreValues() {
         </div>
 
         {/* Second Row (duplicate) */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-28 md:grid-cols-3">
           {values.map((value, index) => (
             <div key={`row2-${index}`} className="flex flex-col items-center space-y-4 text-center">
               <div className="text-black">{value.icon}</div>
