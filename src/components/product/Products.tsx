@@ -32,7 +32,7 @@ export default function Products() {
         {/* Content */}
         <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 md:px-[10%]">
           <div className="space-y-6">
-            <span className="inline-block rounded-full border border-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white">
+            <span className="inline-block border border-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white">
               {badge}
             </span>
             <h1 className="text-5xl font-bold text-white mb-18 md:text-6xl">
@@ -53,28 +53,32 @@ export default function Products() {
           </div>
 
           {/* Tabs */}
-          <div className="flex items-center justify-center gap-4 border-b border-[#431800]/20 pb-4">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={clsx(
-                  "relative px-6 py-2 text-sm font-medium transition-colors",
-                  activeTab === tab.id
-                    ? "text-[#431800]"
-                    : "text-[#431800]/60 hover:text-[#431800]"
-                )}
-              >
-                <span className="flex flex-col items-center gap-1">
-                  <span className="font-bold">{tab.label}</span>
-                  <span className="text-xs">{tab.labelKinyarwanda}</span>
-                </span>
+          <div className="flex items-center justify-center gap-6">
+            {tabs.map((tab, index) => (
+              <>
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={clsx(
+                    "relative pb-4 text-base font-semibold transition-colors",
+                    activeTab === tab.id
+                      ? "text-[#431800]"
+                      : "text-[#431800]/60 hover:text-[#431800]"
+                  )}
+                >
+                  {tab.label}
+                  
+                  {/* Active indicator underline */}
+                  {activeTab === tab.id && (
+                    <span className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#431800]" />
+                  )}
+                </button>
                 
-                {/* Active indicator dot */}
-                {activeTab === tab.id && (
-                  <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 h-2 w-2 rounded-full bg-[#431800]" />
+                {/* Dot separator between tabs */}
+                {index < tabs.length - 1 && (
+                  <span className="h-2 w-2 rounded-full bg-[#431800]" />
                 )}
-              </button>
+              </>
             ))}
           </div>
 

@@ -18,7 +18,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-start justify-end  px-6 md:px-[10%]">
         <div className="space-y-6">
-          <span className="inline-block rounded-full border border-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white">
+          <span className="inline-block border border-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white">
             Who we are
           </span>
           <h1 className="text-5xl font-bold text-white mb-18 md:text-6xl">

@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <section className="relative isolate bg-brand-charcoal text-white">
-      <div className="grid min-h-[720px] grid-cols-1  lg:grid-cols-[1.8fr_1fr_1fr]">
+      <div className="grid min-h-[720px] grid-cols-1 lg:grid-cols-[1.8fr_1fr_1fr]">
         {/* Primary Hero Section */}
         <div className="relative h-[520px] lg:h-auto">
           <Image
