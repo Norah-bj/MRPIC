@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { heroContent } from "@/lib/content";
 import { Badge } from "@/components/ui/Badge";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   const { badge, title, description, ctaHref, ctaLabel, cards, slides } =
@@ -21,7 +22,7 @@ export default function Hero() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-          <div className="relative z-10 flex h-full flex-col justify-center px-8 py-10 md:px-16 lg:max-w-2xl">
+          <div className="relative z-10 flex h-full flex-col ml-14 justify-center px-8 py-10 md:px-16 lg:max-w-2xl">
             <Badge className="w-fit border-white/40 bg-white/10 text-white backdrop-blur-sm">
               {badge}
             </Badge>
@@ -40,9 +41,7 @@ export default function Hero() {
                   className="group inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white transition-colors hover:text-brand-gold"
                 >
                   {ctaLabel}
-                  <span className="text-xl transition-transform group-hover:translate-x-1">
-                    →
-                  </span>
+                  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </div>

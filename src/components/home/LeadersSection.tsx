@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { leadersContent } from "@/lib/content";
+import { ArrowRight } from "lucide-react";
 
 
 export default function LeadersSection() {
@@ -31,9 +32,7 @@ export default function LeadersSection() {
             className="group inline-flex items-center gap-2 text-sm font-bold text-white transition-colors hover:text-white/80"
           >
             {ctaLabel}
-            <span className="transition-transform group-hover:translate-x-1">
-              →
-            </span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
 

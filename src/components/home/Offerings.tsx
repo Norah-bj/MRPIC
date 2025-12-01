@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import { productsContent } from "@/lib/content";
+import { ArrowRight } from "lucide-react";
 
 export default function Offerings() {
   const { badge, title, ctaHref, ctaLabel, products } = productsContent;
@@ -14,10 +15,10 @@ export default function Offerings() {
       <div className="container mx-auto max-w-6xl px-6 space-y-16">
         <div className="flex flex-wrap items-end justify-between gap-6 border-b border-[#431800] pb-8">
           <div className="space-y-4">
-            <h3 className="text-sm font-bold text-[#431800]">
+            <h3 className="text-sm font-bold text-[#000000]">
               {badge}
             </h3>
-            <h2 className="font-display text-4xl font-bold tracking-tight text-[#431800] md:text-5xl">
+            <h2 className="font-display text-4xl font-bold tracking-tight text-[#000000] md:text-5xl">
               {title}
             </h2>
           </div>
@@ -27,7 +28,7 @@ export default function Offerings() {
           >
             {ctaLabel}
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#431800] text-white transition-transform group-hover:translate-x-1">
-              →
+              <ArrowRight className="h-4 w-4" />
             </span>
           </Link>
         </div>

@@ -1,4 +1,5 @@
 import { statsMetrics } from "@/lib/content";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Stats() {
   return (
@@ -24,7 +25,7 @@ export default function Stats() {
             aria-label="Previous"
             className="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-white/30 text-lg text-white transition-colors"
           >
-            ←
+           <ArrowLeft className="h-4 w-4" />
           </button>
           <div className="relative flex-1 px-4">
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 border-t border-white/30" />
@@ -42,7 +43,7 @@ export default function Stats() {
             aria-label="Next"
             className="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-white/30 text-lg text-white transition-colors"
           >
-            →
+          <ArrowRight className="h-4 w-4" />
           </button>
         </div>
       </div>
