@@ -47,10 +47,10 @@ export default function Products() {
         <div className="container mx-auto max-w-6xl px-6 space-y-16">
           {/* Title */}
           <div className="text-center space-y-4">
-            <h3 className="text-xl font-bold text-[#431800]">
+            <h3 className="text-xl font-bold text-[#000000]">
               {badge}
             </h3>
-            <h2 className="font-display text-4xl font-bold tracking-tight text-[#431800] md:text-5xl">
+            <h2 className="font-display text-4xl font-bold tracking-tight text-[#000000] md:text-5xl">
               {title}
             </h2>
           </div>
@@ -64,8 +64,8 @@ export default function Products() {
                   className={clsx(
                     "relative pb-4 text-base font-semibold transition-colors",
                     activeTab === tab.id
-                      ? "text-[#431800]"
-                      : "text-[#431800]/60 hover:text-[#431800]"
+                      ? "text-[#000000]"
+                      : "text-[#000000]/60 hover:text-[#000000]"
                   )}
                 >
                   {tab.label}
