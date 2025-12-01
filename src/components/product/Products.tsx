@@ -47,6 +47,9 @@ export default function Products() {
         <div className="container mx-auto max-w-6xl px-6 space-y-16">
           {/* Title */}
           <div className="text-center space-y-4">
+            <h3 className="text-xl font-bold text-[#431800]">
+              {badge}
+            </h3>
             <h2 className="font-display text-4xl font-bold tracking-tight text-[#431800] md:text-5xl">
               {title}
             </h2>
@@ -70,13 +73,13 @@ export default function Products() {
                   
                   {/* Active indicator underline */}
                   {activeTab === tab.id && (
-                    <span className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#431800]" />
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[2.5px] bg-[#431800]" />
                   )}
                 </button>
                 
                 {/* Dot separator between tabs */}
                 {index < tabs.length - 1 && (
-                  <span className="h-2 w-2 rounded-full bg-[#431800]" />
+                  <span className="h-3 w-3 rounded-full bg-[#431800]" />
                 )}
               </>
             ))}
