@@ -3,7 +3,7 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { whatWeDoContent } from "@/lib/content";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 
 export default function Products() {
   const { badge, title, tabs, consumableProducts, otherProducts } = whatWeDoContent;
@@ -58,9 +58,8 @@ export default function Products() {
           {/* Tabs */}
           <div className="flex items-center justify-center gap-6">
             {tabs.map((tab, index) => (
-              <>
+              <Fragment key={tab.id}>
                 <button
-                  key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={clsx(
                     "relative pb-4 text-base font-semibold transition-colors",
@@ -81,7 +80,7 @@ export default function Products() {
                 {index < tabs.length - 1 && (
                   <span className="h-3 w-3 rounded-full bg-[#431800]" />
                 )}
-              </>
+              </Fragment>
             ))}
           </div>
 
