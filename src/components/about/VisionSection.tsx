@@ -27,7 +27,7 @@ export default function VisionSection() {
 
         {/* Vision and Mission */}
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-          <div className="space-y-8">
+          <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-3">
               <h3 className="text-2xl font-bold text-black">Our vision</h3>
               <p className="text-sm leading-relaxed text-gray-700">
