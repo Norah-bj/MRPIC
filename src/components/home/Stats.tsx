@@ -3,8 +3,8 @@ import { statsMetrics } from "@/lib/content";
 export default function Stats() {
   return (
     <section className="relative z-20 mx-auto max-w-7xl px-6 md:px-26">
-      <div className="rounded-xl border border-white/30 bg-black/20 px-6 py-6 text-white backdrop-blur-sm md:px-8 md:py-12">
-        <div className="grid text-center sm:grid-cols-2 lg:grid-cols-4">
+      <div className="rounded-xl border border-white/30 bg-black/20 px-6 py-12 sm:py-4 md:py-8 text-white backdrop-blur-sm md:px-8">
+        <div className="grid text-center sm:grid-cols-2 sm:gap-2 lg:grid-cols-4">
           {statsMetrics.map((metric) => (
             <div key={metric.label} className="flex flex-col items-center">
               <p className="font-display text-2xl font-bold tracking-tight md:text-3xl">
@@ -18,7 +18,7 @@ export default function Stats() {
         </div>
 
         {/* Timeline Visual */}
-        <div className="mt-4 flex items-center gap-2 md:mt-5">
+        <div className="mt-4 hidden items-center gap-2 md:mt-5 lg:flex">
           <button
             type="button"
             aria-label="Previous"

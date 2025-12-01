@@ -132,6 +132,137 @@ export const productsContent: ProductsContent = {
   ],
 };
 
+export const whatWeDoContent = {
+  badge: "OUR PRODUCTS",
+  title: "Product Range",
+  tabs: [
+    {
+      id: "consumable",
+      label: "Consumable products",
+      labelKinyarwanda: "(ibicuruzwa bikoreshwa n'abantu cyangwa amatungo)",
+    },
+    {
+      id: "other",
+      label: "Other products",
+      labelKinyarwanda: "(ibicuruzwa bitari ibyo kurya cyangwa kunywa)",
+    },
+  ],
+  consumableProducts: [
+    {
+      title: "Rice Snacks",
+      description: "Delicious rice cakes and crisps made from premium rice varieties, perfect for a healthy snack.",
+      image: "/Recipe 1.png",
+      alt: "Rice snacks including cakes and crisps",
+    },
+    {
+      title: "Ready-to-Cook Rice Mixes",
+      description: "Convenient pilau mix and flavored rice options that bring authentic taste to your table.",
+      image: "/Recipe 2.png",
+      alt: "Ready-to-cook rice mix packages",
+    },
+    {
+      title: "Instant Porridge Mixes",
+      description: "Nutritious and easy-to-prepare porridge mixes for a wholesome breakfast.",
+      image: "/Recipe 3.png",
+      alt: "Instant porridge mix",
+    },
+    {
+      title: "Poultry Feed",
+      description: "High-quality feed formulated specifically for optimal poultry health and growth.",
+      image: "/Recipe 4.png",
+      alt: "Poultry feed",
+    },
+    {
+      title: "Pig Feed",
+      description: "Nutrient-rich feed designed to support healthy pig development and productivity.",
+      image: "/Recipe 5.png",
+      alt: "Pig feed",
+    },
+    {
+      title: "Fish Feed",
+      description: "Specialized aquaculture feed for sustainable fish farming operations.",
+      image: "/Recipe 6.png",
+      alt: "Fish feed",
+    },
+    {
+      title: "Rice Bran Oil",
+      description: "Premium cooking oil extracted from rice bran, rich in antioxidants and nutrients.",
+      image: "/Recipe 1.png",
+      alt: "Rice bran oil bottle",
+    },
+    {
+      title: "Organic Compost",
+      description: "Natural fertilizer and soil amendment for sustainable farming practices.",
+      image: "/Recipe 2.png",
+      alt: "Organic compost",
+    },
+    {
+      title: "Rice Bran Supplements",
+      description: "Nutritional supplements for animals, enhancing their diet with essential nutrients.",
+      image: "/Recipe 3.png",
+      alt: "Rice bran animal supplements",
+    },
+  ],
+  otherProducts: [
+    {
+      title: "Rice Husk Briquettes",
+      description: "Eco-friendly charcoal alternative made from rice husks for sustainable energy.",
+      image: "/Recipe 4.png",
+      alt: "Rice husk briquettes",
+    },
+    {
+      title: "Animal Bedding",
+      description: "Clean and absorbent bedding material for poultry and pig housing.",
+      image: "/Recipe 5.png",
+      alt: "Animal bedding",
+    },
+
+    {
+      title: "Biodegradable Packaging",
+      description: "Eco-friendly cups, plates, and trays made from rice-based materials.",
+      image: "/Recipe 1.png",
+      alt: "Biodegradable packaging products",
+    },
+
+    {
+      title: "Rice Husk Energy",
+      description: "Biogas and other energy products derived from rice processing waste.",
+      image: "/Recipe 3.png",
+      alt: "Rice husk energy products",
+    },
+    {
+      title: "Branded Packaging",
+      description: "Premium quality packaging bags for agricultural and commercial use.",
+      image: "/Recipe 4.png",
+      alt: "Branded packaging bags",
+    },
+    {
+      title: "Milling Services",
+      description: "Professional milling and drying services for rice and grain processing.",
+      image: "/Recipe 5.png",
+      alt: "Milling services",
+    },
+    {
+      title: "Storage Services",
+      description: "Secure warehousing and storage facilities for agricultural products.",
+      image: "/Recipe 6.png",
+      alt: "Storage warehousing",
+    },
+    {
+      title: "Agri-Tourism",
+      description: "Educational farm tours and agri-tourism experiences for visitors.",
+      image: "/Recipe 1.png",
+      alt: "Agri-tourism packages",
+    },
+    {
+      title: "Training Services",
+      description: "Professional training programs for farmers on modern agricultural practices.",
+      image: "/Recipe 2.png",
+      alt: "Farmer training services",
+    },
+  ],
+};
+
 export const footerContent: FooterContent = {
   brand: "Mukunguri Rice",
   description:
