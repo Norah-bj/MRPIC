@@ -68,7 +68,14 @@ export default function ContactPage() {
                 </div>
               </div>
             ) : (
-              <Map />
+              <div className="flex flex-col lg:flex-row gap-16 justify-between">
+                <div className="w-full">
+                  <Map />
+                </div>
+                <div className="lg:w-1/3">
+                  <Socials />
+                </div>
+              </div>
             )}
           </div>
         </div>
