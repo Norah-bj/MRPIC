@@ -1,19 +1,22 @@
 import { Instagram, Facebook, Twitter, Mail, MapPin, Phone } from "lucide-react";
+import { contactContent } from "@/lib/content";
 
 export default function Socials() {
+  const { title, phone, email, address, socials } = contactContent;
+
   return (
     <div className="space-y-12">
-      <h3 className="text-xl font-medium text-black">Contact us on</h3>
+      <h3 className="text-xl font-medium text-black">{title}</h3>
       
       {/* Social Icons */}
       <div className="flex gap-6">
-        <a href="#" className="text-[#431800] hover:opacity-80 transition-opacity">
+        <a href={socials.instagram} className="text-[#431800] hover:opacity-80 transition-opacity">
           <Instagram className="w-8 h-8" />
         </a>
-        <a href="#" className="text-[#431800] hover:opacity-80 transition-opacity">
+        <a href={socials.facebook} className="text-[#431800] hover:opacity-80 transition-opacity">
           <Facebook className="w-8 h-8" />
         </a>
-        <a href="#" className="text-[#431800] hover:opacity-80 transition-opacity">
+        <a href={socials.twitter} className="text-[#431800] hover:opacity-80 transition-opacity">
           <Twitter className="w-8 h-8" />
         </a>
       </div>
@@ -25,8 +28,8 @@ export default function Socials() {
             <Phone className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h4 className="font-bold text-[#2C1810]">Phone number</h4>
-            <p className="text-sm text-gray-600">(+250) 792050511</p>
+            <h4 className="font-bold text-[#2C1810]">{phone.label}</h4>
+            <p className="text-sm text-gray-600">{phone.value}</p>
           </div>
         </div>
 
@@ -35,8 +38,8 @@ export default function Socials() {
             <Mail className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h4 className="font-bold text-[#2C1810]">Email</h4>
-            <p className="text-sm text-gray-600">bonnieumurerwa@gmail.com</p>
+            <h4 className="font-bold text-[#2C1810]">{email.label}</h4>
+            <p className="text-sm text-gray-600">{email.value}</p>
           </div>
         </div>
 
@@ -45,8 +48,8 @@ export default function Socials() {
             <MapPin className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h4 className="font-bold text-[#2C1810]">Address</h4>
-            <p className="text-sm text-gray-600">Kigali/Rwanda</p>
+            <h4 className="font-bold text-[#2C1810]">{address.label}</h4>
+            <p className="text-sm text-gray-600">{address.value}</p>
           </div>
         </div>
       </div>

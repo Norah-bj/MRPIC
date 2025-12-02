@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <form className="space-y-2 w-full max-w-2xl">
+    <form className="space-y-1 w-full max-w-2xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <label htmlFor="fullName" className="text-sm font-medium text-black ml-4">

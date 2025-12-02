@@ -17,7 +17,7 @@ export default function ContactPage() {
       <section className="bg-white py-24">
         <div className="container mx-auto max-w-6xl px-6">
           {/* Header */}
-          <div className="text-center space-y-8 mb-16">
+          <div className="text-center space-y-8 mb-10">
             <h2 className="text-4xl font-bold text-black md:text-5xl">
               Connnect With Us WorldWide
             </h2>

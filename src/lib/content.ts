@@ -36,6 +36,27 @@ export const heroContent: HeroContent = {
   ],
 };
 
+export const contactContent = {
+  title: "Contact us on",
+  phone: {
+    label: "Phone number",
+    value: "(+250) 792050511",
+  },
+  email: {
+    label: "Email",
+    value: "bonnieumurerwa@gmail.com",
+  },
+  address: {
+    label: "Address",
+    value: "Kamonyi, Musambira",
+  },
+  socials: {
+    instagram: "#",
+    facebook: "#",
+    twitter: "#",
+  },
+};
+
 export const statsMetrics: StatMetric[] = [
   {
     value: "4",

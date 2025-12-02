@@ -27,7 +27,7 @@ export default function Products() {
         />
         
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/70" />
         
         {/* Content */}
         <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 md:px-[10%]">
