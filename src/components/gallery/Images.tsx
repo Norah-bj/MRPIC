@@ -28,18 +28,99 @@ export default function GalleryImages() {
         </div>
 
         {/* Masonry Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
-          {galleryImages.map((image, index) => (
-            <div key={index} className="relative break-inside-avoid overflow-hidden rounded-lg group">
+        {/* Balanced Grid */}
+        <div className="flex flex-col lg:flex-row gap-4">
+          {/* Column 1 */}
+          <div className="flex flex-col gap-4 flex-1">
+            <div className="relative h-[350px] overflow-hidden rounded-lg group">
               <Image
-                src={image.src}
-                alt={image.alt}
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                src="/About-bg.png"
+                alt="Rice field landscape"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
-          ))}
+            <div className="relative h-[250px] overflow-hidden rounded-lg group">
+              <Image
+                src="/Contact-bg.png"
+                alt="Contact background"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="relative h-[400px] overflow-hidden rounded-lg group">
+              <Image
+                src="/down.jpg"
+                alt="Rice processing"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          </div>
+
+          {/* Column 2 */}
+          <div className="flex flex-col gap-4 flex-1">
+            <div className="relative h-[200px] overflow-hidden rounded-lg group">
+              <Image
+                src="/Gallery-bg.png"
+                alt="Gallery highlight"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="relative h-[300px] overflow-hidden rounded-lg group">
+              <Image
+                src="/Investment-bg.png"
+                alt="Investment opportunities"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="relative h-[200px] overflow-hidden rounded-lg group">
+              <Image
+                src="/Join-ourteam-bg.png"
+                alt="Join our team"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="relative h-[300px] overflow-hidden rounded-lg group">
+              <Image
+                src="/LeaderSection-bg.png"
+                alt="Leadership"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          </div>
+
+          {/* Column 3 */}
+          <div className="flex flex-col gap-4 flex-1">
+            <div className="relative h-[400px] overflow-hidden rounded-lg group">
+              <Image
+                src="/Product-bg.png"
+                alt="Our products"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="relative h-[250px] overflow-hidden rounded-lg group">
+              <Image
+                src="/Rectangle 2.png"
+                alt="Rice grains"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="relative h-[350px] overflow-hidden rounded-lg group">
+              <Image
+                src="/Rectangle 3.png"
+                alt="Agricultural process"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
