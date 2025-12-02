@@ -1,4 +1,4 @@
-import { DollarSign, PieChart, Shield } from "lucide-react";
+import { DollarSign, PieChart, Shield, Users } from "lucide-react";
 
 export default function InvestmentSections() {
   const sections = [
@@ -20,6 +20,12 @@ export default function InvestmentSections() {
       description: "Low-risk investment bonds backed by our agricultural assets and operations.",
       returns: "12-15% annual returns",
     },
+    // {
+    //   icon: Users,
+    //   title: "Community Partnership",
+    //   description: "Join our cooperative partnership model. COOPRORIZ-ABAHUZABIKORWA holds investment shares, benefiting directly from factory profits while supporting 1000+ farmers.",
+    //   returns: "Shared profits + Social impact",
+    // },
   ];
 
   return (

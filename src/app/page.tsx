@@ -2,6 +2,7 @@ import Hero from "@/components/home/Hero";
 import Stats from "@/components/home/Stats";
 import Offerings from "@/components/home/Offerings";
 import LeadersSection from "@/components/home/LeadersSection";
+import Testimonials from "@/components/home/Testimonials";
 import JoinOurTeam from "@/components/home/JoinOurTeam";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <LeadersSection />
       <Offerings />
+      <Testimonials />
       <JoinOurTeam />
     </main>
   );

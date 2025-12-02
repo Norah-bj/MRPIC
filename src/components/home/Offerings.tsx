@@ -11,7 +11,7 @@ export default function Offerings() {
   const displayProducts = products.slice(0, 6);
 
   return (
-    <section className="bg-white py-24 text-[#431800]">
+    <section className="bg-white py-20 text-[#431800]">
       <div className="container mx-auto max-w-6xl px-6 space-y-16">
         <div className="flex flex-wrap items-end justify-between gap-6 border-b border-[#431800] pb-8">
           <div className="space-y-4">

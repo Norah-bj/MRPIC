@@ -60,3 +60,17 @@ export interface FooterContent {
   poweredBy: string;
 }
 
+export interface Testimonial {
+  name: string;
+  role: string;
+  quote: string;
+  highlight?: string;
+}
+
+export interface TestimonialsContent {
+  badge: string;
+  title: string;
+  description: string;
+  testimonials: Testimonial[];
+}
+

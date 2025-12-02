@@ -84,6 +84,11 @@ export const communityImpactContent = {
   badge: "OUR IMPACT",
   title: "Building Stronger Communities",
   description: "At Mukunguri Rice, we believe in creating value beyond our products. Our commitment to community development drives everything we do.",
+  reach: {
+    title: "Our Reach",
+    description: "Serving farmers and communities across multiple sectors",
+    areas: ["Nyamiyaga", "Mugina", "Kinazi"],
+  },
   stats: [
     {
       value: "52+",
@@ -104,18 +109,44 @@ export const communityImpactContent = {
   programs: [
     {
       title: "Partnership with COOPRORIZ-ABAHUZABIKORWA",
-      description: "Collaborating with local cooperatives to strengthen the agricultural value chain and support smallholder farmers across the region.",
+      description: "Collaborating with local cooperatives to strengthen the agricultural value chain and support smallholder farmers across the region. The cooperative has investment shares in our factory, benefiting directly from profits.",
       icon: "partnership",
     },
     {
       title: "Solar Lighting Program",
-      description: "Providing sustainable solar lighting solutions to improve quality of life and enable productive activities after dark in rural communities.",
+      description: "Providing sustainable solar lighting solutions to improve quality of life and enable productive activities after dark in rural communities. Our lights have transformed the area, making it as bright as Kigali.",
       icon: "solar",
     },
     {
       title: "Health Insurance Support",
-      description: "Supporting employees and community members with health insurance coverage to ensure access to quality healthcare services.",
+      description: "Supporting employees and community members with health insurance coverage to ensure access to quality healthcare services for those who cannot afford it.",
       icon: "health",
+    },
+  ],
+};
+
+export const testimonialsContent = {
+  badge: "COMMUNITY VOICES",
+  title: "Stories from Our Neighbors",
+  description: "Hear directly from the people whose lives have been touched by Mukunguri Rice's commitment to community development.",
+  testimonials: [
+    {
+      name: "Uwiduhaye Claudine",
+      role: "Resident, 200m from factory",
+      quote: "We can't explain how good it is living near this factory because it has changed the lives of many people. They give livestock to residents, polished rice is no longer far away, they pay community health insurance for those who cannot afford it, among other things.",
+      highlight: "Development has increased because previously there was total darkness. You'd walk stumbling over stones and bricks, but now everything is lit up like daytime. Mukunguri is basically Kigali level — actually, we are brighter than Kigali. We walk freely at night without any problem.",
+    },
+    {
+      name: "Habiyezu Jean Paul",
+      role: "Resident, Nearby Trading Center",
+      quote: "Before, when electricity was cut, you'd see darkness immediately. But now, you walk and nothing seems changed because there is solar light that doesn't go off at night. We walk without fear.",
+      highlight: "Besides the light, the factory supports us in daily life as neighbors — truly, we lack nothing.",
+    },
+    {
+      name: "Nteziryayo Evaliste",
+      role: "Factory Manager",
+      quote: "When we used to go to the center in the evening, there was darkness, which could lead to crime and theft. So we realized that lighting ourselves alone was not enough. We needed to extend the light to the surrounding community to solve those problems.",
+      highlight: "Here we have 52 permanent employees and expect to hire more as activities grow. Rice farmers grouped in the cooperative COOPRORIZ-ABAHUZABIKORWA are our permanent suppliers. We buy all their produce and pay them on time, and their cooperative even has investment shares in this factory.",
     },
   ],
 };

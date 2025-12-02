@@ -9,13 +9,15 @@ export default function InvestmentOpportunity() {
     "Direct ownership of productive assets",
     "Professional management by expert agronomists",
     "Contribution to local community development",
+    "Partnership with COOPRORIZ-ABAHUZABIKORWA cooperative",
+    "Support for 1000+ farmers and 52+ permanent employees",
   ];
 
   return (
-    <section className="bg-white py-15">
+    <section className="bg-white py-10">
       <div className="container mx-auto max-w-6xl px-6">
         {/* Header */}
-        <div className="text-center space-y-4 mb-6">
+        <div className="text-center space-y-2 mb-2">
           <h2 className="text-4xl font-bold text-black md:text-5xl">
             Investment opportunities
           </h2>
@@ -27,7 +29,7 @@ export default function InvestmentOpportunity() {
         {/* Why Invest Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center py-10">
           {/* Left: Benefits List */}
-          <div className="space-y-8 flex flex-col items-center">
+          <div className="space-y-6 flex flex-col items-center">
             <h3 className="text-3xl font-bold text-black">
               Why Invest With Us?
             </h3>

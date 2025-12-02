@@ -29,7 +29,7 @@ export default function JoinOurTeam() {
             </p>
             <Link
               href="/contact"
-              className="group mx-auto flex w-fit items-center gap-3 rounded-full border border-[#431800] px-3 py-2 text-sm font-semibold text-[#000000] transition-all hover:bg-[#431800] hover:text-white"
+              className="group mx-auto flex w-fit items-center gap-1 rounded-full border border-[#431800] px-3 py-2 text-sm font-semibold text-[#000000] transition-all hover:bg-[#431800] hover:text-white"
             >
               Join our Team
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white text-[#431800] transition-transform group-hover:translate-x-1">
