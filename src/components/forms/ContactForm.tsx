@@ -9,7 +9,7 @@ export default function ContactForm() {
           <input
             type="text"
             id="fullName"
-            className="w-full rounded-full border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
+            className="w-full rounded-2xl border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
           />
         </div>
         <div className="space-y-2">
@@ -19,7 +19,7 @@ export default function ContactForm() {
           <input
             type="email"
             id="email"
-            className="w-full rounded-full border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
+            className="w-full rounded-2xl border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
           />
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function ContactForm() {
           <input
             type="tel"
             id="phone"
-            className="w-full rounded-full border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
+            className="w-full rounded-2xl border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
           />
         </div>
         <div className="space-y-2">
@@ -42,7 +42,7 @@ export default function ContactForm() {
           <input
             type="text"
             id="address"
-            className="w-full rounded-full border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
+            className="w-full rounded-2xl border border-gray-300 px-6 py-3 focus:border-[#431800] focus:outline-none"
           />
         </div>
       </div>
