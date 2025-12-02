@@ -25,34 +25,34 @@ export default function ContactPage() {
             {/* Tabs */}
             <div className="flex items-center justify-center gap-6">
               <button
-                onClick={() => setActiveTab("offices")}
+                onClick={() => setActiveTab("contact")}
                 className={clsx(
-                  "relative pb-4 text-2xl font-bold transition-colors",
-                  activeTab === "offices"
-                    ? "text-black"
-                    : "text-black/60 hover:text-black"
+                  "relative pb-4 text-base font-semibold transition-colors",
+                  activeTab === "contact"
+                    ? "text-[#000000]"
+                    : "text-[#000000]/60 hover:text-[#000000]"
                 )}
               >
-                Our Offices
-                {activeTab === "offices" && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#431800]" />
+                Contact us
+                {activeTab === "contact" && (
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[2.5px] bg-[#431800]" />
                 )}
               </button>
 
               <span className="h-3 w-3 rounded-full bg-[#431800]" />
 
               <button
-                onClick={() => setActiveTab("contact")}
+                onClick={() => setActiveTab("offices")}
                 className={clsx(
-                  "relative pb-4 text-2xl font-bold transition-colors",
-                  activeTab === "contact"
-                    ? "text-black"
-                    : "text-black/60 hover:text-black"
+                  "relative pb-4 text-base font-semibold transition-colors",
+                  activeTab === "offices"
+                    ? "text-[#000000]"
+                    : "text-[#000000]/60 hover:text-[#000000]"
                 )}
               >
-                Contact us
-                {activeTab === "contact" && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#431800]" />
+                Our Offices
+                {activeTab === "offices" && (
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[2.5px] bg-[#431800]" />
                 )}
               </button>
             </div>

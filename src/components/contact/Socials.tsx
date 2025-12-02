@@ -2,7 +2,7 @@ import { Instagram, Facebook, Twitter, Mail, MapPin, Phone } from "lucide-react"
 
 export default function Socials() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-12">
       <h3 className="text-xl font-medium text-black">Contact us on</h3>
       
       {/* Social Icons */}
