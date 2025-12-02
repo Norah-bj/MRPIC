@@ -130,25 +130,23 @@ export const productsContent: ProductsContent = {
       alt: "Bowl of brown rice",
     },
     {
-      title: "BURYOHE Rice",
-      description:
-        "Our flagship rice brand - processed at our Rice Mill from paddy rice grown in Mukunguri valley. Premium cleaned rice ready for market across Rwanda.",
-      image: "/Recipe 4.png",
-      alt: "Serving of rice",
+      title: "Briquettes (Cooking Charcoal)",
+      description: "Eco-friendly cooking fuel made from rice processing residues, providing sustainable energy for households.",
+      image: "/Recipe 3.png",
+      alt: "Cooking briquettes",
     },
     {
-      title: "UMUMAF Maize Flour",
-      description:
-        "Our premium maize flour brand - processed at our Maize Flour Plant from local farmers. Enriched maize meal for households and schools across Rwanda.",
-      image: "/Recipe 5.png",
-      alt: "Maize flour scooped in bowl",
+      title: "Organic Fertilizer",
+      description: "Natural fertilizer produced from rice processing waste, supporting sustainable farming practices.",
+      image: "/Recipe 1.png",
+      alt: "Organic fertilizer",
     },
+
     {
-      title: "Brown Rice",
-      description:
-        "Nutrient-rich brown rice grown using sustainable methods. Healthier choice for conscious consumers.",
-      image: "/Recipe 6.png",
-      alt: "Cooked brown rice",
+      title: "Rice Husks",
+      description: "Versatile agricultural byproduct used for animal bedding, soil amendment, and various farming applications.",
+      image: "/Recipe 2.png",
+      alt: "Rice husks",
     },
   ],
 };
@@ -170,22 +168,22 @@ export const whatWeDoContent = {
   ],
   consumableProducts: [
     {
-      title: "Rice Snacks",
-      description: "Delicious rice cakes and crisps made from premium rice varieties, perfect for a healthy snack.",
+      title: "BURYOHE Rice",
+      description: "Our flagship rice brand - processed at our Rice Mill from paddy rice grown in Mukunguri valley. Premium cleaned rice ready for market across Rwanda.",
       image: "/Recipe 1.png",
-      alt: "Rice snacks including cakes and crisps",
-    },
+      alt: "Bowl of BURYOHE rice",
+    }, 
     {
-      title: "Ready-to-Cook Rice Mixes",
-      description: "Convenient pilau mix and flavored rice options that bring authentic taste to your table.",
-      image: "/Recipe 2.png",
-      alt: "Ready-to-cook rice mix packages",
-    },
-    {
-      title: "Instant Porridge Mixes",
-      description: "Nutritious and easy-to-prepare porridge mixes for a wholesome breakfast.",
+      title: "Brown Rice",
+      description: "Nutrient-rich brown rice grown using sustainable methods. Healthier choice for conscious consumers.",
       image: "/Recipe 3.png",
-      alt: "Instant porridge mix",
+      alt: "Bowl of brown rice",
+    },
+    {
+      title: "UMUMAF Maize Flour",
+      description: "Our premium maize flour brand - processed at our Maize Flour Plant from local farmers. Enriched maize meal for households and schools across Rwanda.",
+      image: "/Recipe 2.png",
+      alt: "Bowl of maize flour",
     },
     {
       title: "Poultry Feed",
@@ -226,42 +224,23 @@ export const whatWeDoContent = {
   ],
   otherProducts: [
     {
-      title: "Rice Husk Briquettes",
-      description: "Eco-friendly charcoal alternative made from rice husks for sustainable energy.",
+      title: "Briquettes (Cooking Charcoal)",
+      description: "Eco-friendly cooking fuel made from rice processing residues, providing sustainable energy for households.",
       image: "/Recipe 4.png",
-      alt: "Rice husk briquettes",
+      alt: "Cooking briquettes",
     },
     {
-      title: "Animal Bedding",
-      description: "Clean and absorbent bedding material for poultry and pig housing.",
-      image: "/Recipe 5.png",
-      alt: "Animal bedding",
-    },
-
-    {
-      title: "Biodegradable Packaging",
-      description: "Eco-friendly cups, plates, and trays made from rice-based materials.",
+      title: "Organic Fertilizer",
+      description: "Natural fertilizer produced from rice processing waste, supporting sustainable farming practices.",
       image: "/Recipe 1.png",
-      alt: "Biodegradable packaging products",
+      alt: "Organic fertilizer",
     },
 
     {
-      title: "Rice Husk Energy",
-      description: "Biogas and other energy products derived from rice processing waste.",
-      image: "/Recipe 3.png",
-      alt: "Rice husk energy products",
-    },
-    {
-      title: "Branded Packaging",
-      description: "Premium quality packaging bags for agricultural and commercial use.",
-      image: "/Recipe 4.png",
-      alt: "Branded packaging bags",
-    },
-    {
-      title: "Milling Services",
-      description: "Professional milling and drying services for rice and grain processing.",
-      image: "/Recipe 5.png",
-      alt: "Milling services",
+      title: "Rice Husks",
+      description: "Versatile agricultural byproduct used for animal bedding, soil amendment, and various farming applications.",
+      image: "/Recipe 2.png",
+      alt: "Rice husks",
     },
     {
       title: "Storage Services",
