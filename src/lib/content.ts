@@ -80,6 +80,46 @@ export const statsMetrics: StatMetric[] = [
   },
 ];
 
+export const communityImpactContent = {
+  badge: "OUR IMPACT",
+  title: "Building Stronger Communities",
+  description: "At Mukunguri Rice, we believe in creating value beyond our products. Our commitment to community development drives everything we do.",
+  stats: [
+    {
+      value: "52+",
+      label: "Permanent Employees",
+      description: "Full-time jobs providing stable income for local families.",
+    },
+    {
+      value: "1000+",
+      label: "Farmers Supported",
+      description: "Long-term partnerships empowering local agriculture.",
+    },
+    {
+      value: "20",
+      label: "Livestock Donated",
+      description: "Cows provided to support community livelihoods.",
+    },
+  ],
+  programs: [
+    {
+      title: "Partnership with COOPRORIZ-ABAHUZABIKORWA",
+      description: "Collaborating with local cooperatives to strengthen the agricultural value chain and support smallholder farmers across the region.",
+      icon: "partnership",
+    },
+    {
+      title: "Solar Lighting Program",
+      description: "Providing sustainable solar lighting solutions to improve quality of life and enable productive activities after dark in rural communities.",
+      icon: "solar",
+    },
+    {
+      title: "Health Insurance Support",
+      description: "Supporting employees and community members with health insurance coverage to ensure access to quality healthcare services.",
+      icon: "health",
+    },
+  ],
+};
+
 export const leadersContent: LeadersContent = {
   badge: "Our Leaders",
   title: "Creating Growth on the foundation of trust and innovation",
@@ -172,7 +212,7 @@ export const whatWeDoContent = {
       description: "Our flagship rice brand - processed at our Rice Mill from paddy rice grown in Mukunguri valley. Premium cleaned rice ready for market across Rwanda.",
       image: "/Recipe 1.png",
       alt: "Bowl of BURYOHE rice",
-    }, 
+    },
     {
       title: "Brown Rice",
       description: "Nutrient-rich brown rice grown using sustainable methods. Healthier choice for conscious consumers.",
