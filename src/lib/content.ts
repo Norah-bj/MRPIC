@@ -48,7 +48,7 @@ export const contactContent = {
   },
   address: {
     label: "Address",
-    value: "Kamonyi, Musambira",
+    value: "Kamonyi, Mugina",
   },
   socials: {
     instagram: "#",
