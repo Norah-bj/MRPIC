@@ -18,7 +18,7 @@ export default function VisionSection() {
             />
           </div>
           <div className="flex flex-col justify-center space-y-4">
-            <h2 className="text-3xl font-bold text-black">Who we are</h2>
+            <h2 className="text-2xl font-bold text-black">Who we are</h2>
             <p className="text-sm leading-relaxed text-gray-700">
               Mukunguri Rice Promotion and Investment Company Ltd (MRPIC) is a comprehensive agricultural processing enterprise located in Mugina Sector, Kamonyi District, Southern Province. Starting with rice processing, we have expanded to operate four modern facilities: Rice Mill, Maize Flour Plant, Animal Feed Plant, and Briquette Plant. Through our zero-waste approach, we transform agricultural raw materials and by-products into quality products including BURYOHE rice, UMUMAF maize flour, animal feed, and eco-friendly charcoal briquettes, serving markets across Kigali, Huye, Muhanga, and beyond.
             </p>

@@ -30,7 +30,7 @@ const config: Config = {
       },
       fontFamily: {
         display: ["Playfair Display", "serif"],
-        sans: ["Inter", "var(--font-geist-sans)", "sans-serif"],
+        sans: ["var(--font-poppins)", "Poppins", "sans-serif"],
       },
       boxShadow: {
         glow: "0 20px 45px rgba(0,0,0,0.45)",
