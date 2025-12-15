@@ -10,9 +10,9 @@ export default function AboutPage() {
     <main className="bg-white">
       <Hero />
       <VisionSection />
-      <CommunityImpact />
       <OurReach />
-      <Testimonials />
+      <CommunityImpact />
+      {/* <Testimonials /> */}
       <CoreValues />
     </main>
   );
