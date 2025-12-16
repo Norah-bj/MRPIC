@@ -12,7 +12,7 @@ const navLinks = [
   { label: "Gallery", href: "/gallery" },
 ];
 
-const brandName = "Mukunguri Rice";
+const brandName = "MRPIC";
 
 export default function Navbar() {
   const pathname = usePathname();

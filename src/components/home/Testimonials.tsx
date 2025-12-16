@@ -6,7 +6,7 @@ export default function Testimonials() {
 
   return (
     <section className="bg-white py-10 text-black">
-      <div className="container mx-auto max-w-6xl px-6 space-y-12">
+      <div className="container mx-auto max-w-6xl px-6 space-y-14">
         <div className="space-y-4 text-center">
           <h3 className="text-sm font-bold uppercase tracking-widest text-[#431800]">
             {badge}

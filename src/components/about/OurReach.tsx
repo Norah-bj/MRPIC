@@ -5,7 +5,7 @@ export default function OurReach() {
   const { reach } = communityImpactContent;
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-10">
       <div className="container mx-auto max-w-6xl px-6">
         <div className="text-center space-y-8">
           <div>
@@ -21,7 +21,7 @@ export default function OurReach() {
             {reach.areas.map((area, index) => (
               <div
                 key={index}
-                className="group flex items-center gap-3 rounded-full border-2 border-[#431800] bg-orange-50 px-6 py-3 transition-all hover:bg-[#431800] hover:text-white"
+                className="group flex items-center gap-3 rounded-full border-1 border-[#431800] bg-orange-50 px-6 py-3 transition-all hover:bg-[#431800] hover:text-white"
               >
                 <MapPin className="h-5 w-5 text-[#431800] group-hover:text-white" />
                 <span className="font-semibold text-black group-hover:text-white">

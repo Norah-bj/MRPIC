@@ -23,7 +23,7 @@ export default function Hero() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
           <div className="relative z-10 flex h-full flex-col ml-14 justify-center px-8 py-10 md:px-16 lg:max-w-2xl">
-            <Badge className="w-fit border-white/40 bg-white/10 text-white backdrop-blur-sm">
+            <Badge className="w-fit border-white/40 bg-white/10 text-white rounded backdrop-blur-sm">
               {badge}
             </Badge>
             <div className="mt-8 space-y-6">

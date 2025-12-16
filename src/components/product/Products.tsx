@@ -78,7 +78,7 @@ export default function Products() {
                 
                 {/* Dot separator between tabs */}
                 {index < tabs.length - 1 && (
-                  <span className="h-3 w-3 rounded-full bg-[#431800]" />
+                  <span className="h-2 w-2 rounded-full bg-[#431800]" />
                 )}
               </Fragment>
             ))}

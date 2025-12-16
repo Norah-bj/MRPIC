@@ -39,7 +39,7 @@ export default function ContactPage() {
                 )}
               </button>
 
-              <span className="h-3 w-3 rounded-full bg-[#431800]" />
+              <span className="h-2 w-2 rounded-full bg-[#431800]" />
 
               <button
                 onClick={() => setActiveTab("offices")}
