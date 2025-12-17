@@ -44,7 +44,7 @@ export const contactContent = {
   },
   email: {
     label: "Email",
-    value: "bonnieumurerwa@gmail.com",
+    value: "mrpic@gmail.com",
   },
   address: {
     label: "Address",
